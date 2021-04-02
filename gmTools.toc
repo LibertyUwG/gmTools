@@ -1,0 +1,6 @@
+## Interface: 80300
+## Title: GMTools
+## Version: 8.3.7
+## Notes: Facilité les macros en GM.
+## Author: Liberty
+gmTools.lua
