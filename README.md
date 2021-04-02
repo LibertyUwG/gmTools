@@ -1,5 +1,8 @@
 # gmTools
-Commands Macros
+
+Addon World of Warcraft 8.3.7 permettant au Maîtres de jeu d'effectuer des vérifications de quêtes avec de simple commandes.
+Veuillez retirer le -main lorsque vous ajoutez l'addons dans votre dossier, il est possible que celui-ci ai des problèmes autrement.
+
 
 	Les commandes ont toutes une lettre définissant la faction: 'h' pour la horde, 'a' pour l'alliance.
 	/gmTools", " Affiche l'aide
