@@ -21,10 +21,24 @@ Des mises à jours seront bientôt disponible (Dès que j'ai le temps en faite L
 	/warhorde9  |  */waralliance9* - Campagne Militaire 8.1 CHAP3 Horde / Alliance
 	/warhorde10  |  */waralliance10* - Campagne Militaire 8.1 CHAP4 Horde / Alliance
 	/warhorde11  |  */waralliance11* - Campagne Militaire 8.1 CHAP5 Horde / Alliance
+	/warhorde12  |  */waralliance11 - Campagne Militaire 8.1 CHAP5 Horde / Alliance
+	/warhorde13  |  */waralliance11 - Campagne Militaire 8.1 CHAP5 Horde / Alliance
+	/fsaurcroc  |  /fsylvanas - Campagne 8.1.5 Fidélité Saurcroc/Sylvanas
 	/nazh1  |  /naza1 - Chapitre 1 Horde / Alliance NAZJATAR
 	/nazh2  |  /naza2 - Chapitre 2 Horde / Alliance NAZJATAR
 	/nazh3  |  /naza3 - Chapitre 3 Horde / Alliance NAZJATAR
 	/cape - Quêtes Cape légendaire H&A
 	/rcoeur - Renforcement du coeur H&A
 
+
+- Possible implémentation d'une commande:
+
+/gmt help
+/gmt warhorde	
+	-> Display de toutes les macros War campaign Horde
+/gmt warcampaign
+	-> Display de toutes les macros Campagne Militaire
+/gmt horde
+	-> Display de toutes les macros horde
+Ect.. mais pas de si tôt lul.
 
