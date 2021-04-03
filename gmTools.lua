@@ -21,6 +21,7 @@ Si j'ai la flemme j'ferait des .lo q tout ce qui y'as de plus simple au lieu de 
 
 ]]--
 
+
 -- Commande help 
 SLASH_GMTOOLS1 = "/gmtools";
 SLASH_GMTOOLS2 = "/gmt";
@@ -40,6 +41,7 @@ function SlashCmdList.GMTOOLS(msg, editbox)
 	print("/warhorde9  |  */waralliance9 - Campagne Militaire 8.1 CHAP3 Horde / Alliance")
 	print("/warhorde10  |  */waralliance10 - Campagne Militaire 8.1 CHAP4 Horde / Alliance")
 	print("/warhorde11  |  */waralliance11 - Campagne Militaire 8.1 CHAP5 Horde / Alliance")
+	print("/fsaurcroc  |  /fsylvanas - Campagne 8.1.5 Fidélité Saurcroc/Sylvanas")
 	print("/nazh1  |  /naza1 - Chapitre 1 Horde / Alliance NAZJATAR")
 	print("/nazh2  |  /naza2 - Chapitre 2 Horde / Alliance NAZJATAR")
 	print("/nazh3  |  /naza3 - Chapitre 3 Horde / Alliance NAZJATAR")
@@ -233,12 +235,87 @@ end
 	5ème Chapitre, Des chemins Divergeants
 --]]
 
-local hwarcampaignonze = {"54282 ", "54164","54165"};
+local hwarcampaignonze = {"54282", "54164","54165"};
 SLASH_HWARCAMPAIGNONZE1 = "/warhorde11";
 function SlashCmdList.HWARCAMPAIGNONZE(msg, editbox)
 	local _, _, _, _, _, active = GetChannelDisplayInfo(2)
 	print("Campagne Militaire 8.1 Horde: 5ème Chapitre, Des chemins Divergeants")
 	    for k, v in pairs(hwarcampaignonze) do
+        SendChatMessage(".lo q " .. v, "SAY")
+    end
+end
+
+
+--[[
+		Campagne Militaire 8.1.5
+	Chapitre Saurcroc, Le destin de Saurcroc
+--]]
+
+local hwarcampaigndouze = {"54097", "54099","54100","54101","54102","54103","54104","54105","54106"};
+SLASH_HWARCAMPAIGNDOUZE1 = "/warhorde12";
+SLASH_HWARCAMPAIGNDOUZE2 = "/destinsaurcroc";
+function SlashCmdList.HWARCAMPAIGNDOUZE(msg, editbox)
+	local _, _, _, _, _, active = GetChannelDisplayInfo(2)
+	print("Campagne Militaire 8.1.5 Horde: Chapitre Saurcroc, Le destin de Saurcroc")
+	    for k, v in pairs(hwarcampaigndouze) do
+        SendChatMessage(".lo q " .. v, "SAY")
+    end
+end
+
+--[[
+		Campagne Militaire 8.1.5
+	Loyaliste: Fidèle Sylvas / Saurcroc
+--]]
+
+local fideleasylvanas = {"54754","54961","55034","55052", "55778", "55780", "55782", "56495", "56833","57130","57148","57149","57150","57151","57152"};
+SLASH_FIDELESYLVANAS1 = "/fidelesylvanas";
+SLASH_FIDELESYLVANAS2 = "/fsylvanas";
+function SlashCmdList.FIDELESYLVANAS(msg, editbox)
+	local _, _, _, _, _, active = GetChannelDisplayInfo(2)
+	print("Campagne Militaire 8.1/2 Horde: Fidèle à Sylvanas")
+	    for k, v in pairs(fideleasylvanas) do
+        SendChatMessage(".lo q " .. v, "SAY")
+    end
+end
+
+local fidelesaurcroc = {"54107","54108","54109","55124","54999","55047","56496","57088","57090","57091","57092","57093","57094","57095"};
+SLASH_FIDELESAURCROC1 = "/fidelesaurcroc";
+SLASH_FIDELESAURCROC2 = "/fsaurcroc";
+function SlashCmdList.FIDELESAURCROC(msg, editbox)
+	local _, _, _, _, _, active = GetChannelDisplayInfo(2)
+	print("Campagne Militaire 8.1/2 Horde: Fidèle à Saurcroc")
+	    for k, v in pairs(fidelesaurcroc) do
+        SendChatMessage(".lo q " .. v, "SAY")
+    end
+end
+
+--[[
+		Campagne Militaire 8.1.5
+	2ème Chapitre, Sombres Conséquences :
+--]]
+
+local hwarcampaigntreize = {"55048", "55049","55050","55051"};
+SLASH_HWARCAMPAIGNTREIZE1 = "/warhorde13";
+function SlashCmdList.HWARCAMPAIGNTREIZE(msg, editbox)
+	local _, _, _, _, _, active = GetChannelDisplayInfo(2)
+	print("Campagne Militaire 8.1.5 Horde: 2ème Chapitre, Sombres Conséquences :")
+	    for k, v in pairs(hwarcampaigntreize) do
+        SendChatMessage(".lo q " .. v, "SAY")
+    end
+end
+
+
+--[[
+		Campagne Militaire 8.1.5
+	2ème Chapitre, Sombres Conséquences :
+--]]
+
+local hwarcampaigntreize = {"54961", "55124","54958","54959","54997","54960"};
+SLASH_HWARCAMPAIGNTREIZE1 = "/warhorde13";
+function SlashCmdList.HWARCAMPAIGNTREIZE(msg, editbox)
+	local _, _, _, _, _, active = GetChannelDisplayInfo(2)
+	print("Campagne Militaire 8.1.5 Horde: 1er Chapitre, Preuves de Loyauté")
+	    for k, v in pairs(hwarcampaigntreize) do
         SendChatMessage(".lo q " .. v, "SAY")
     end
 end
@@ -349,5 +426,3 @@ function SlashCmdList.RENFORT(msg, editbox)
         SendChatMessage(".lo q " .. v, "SAY")
     end
 end
-
-
