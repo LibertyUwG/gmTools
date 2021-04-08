@@ -49,6 +49,19 @@ function SlashCmdList.GMTOOLS(msg, editbox)
 	print("/nazh3  |  /naza3 - Chapitre 3 Horde / Alliance NAZJATAR")
 	print("/cape - Quêtes Cape légendaire H&A")
 	print("/rcoeur - Renforcement du coeur H&A")
+	print("/dalaran - Quêtes acquisition Pierre de foyer Dalaran")
+end
+
+-- Dalaran
+local dalaranf = {"44663"};
+SLASH_DALARAN1 = "/dalaran";
+function SlashCmdList.DALARAN(msg, editbox)
+	local _, _, _, _, _, active = GetChannelDisplayInfo(2)
+	print("Commande début Coeur Azeroth: Horde")
+	print("(Obtention du coeur)")
+	    for k, v in pairs(dalaranf) do
+        SendChatMessage(".lo q " .. v, "SAY")
+    end
 end
 
 --COEUR D'AZEROTH
@@ -91,7 +104,7 @@ function SlashCmdList.HWARCAMPAIGNUNE(msg, editbox)
 	    for k, v in pairs(hwarcampaignune) do
         SendChatMessage(".lo q " .. v, "SAY")
     end
-	print("Il faut accomplir les 3 Têtes de pont (foothold) pour débloquer la quête Union de Zandalar 51916, + la réputation révéré partout, ou une seule tête de pont pour 52451 (sans besoin de réput), si le joueur a déjà unlock les expés sur un autre perso.")
+	C_Timer.After(0.5, function() print("Il faut accomplir les 3 Têtes de pont (foothold) pour débloquer la quête Union de Zandalar 51916, + la réputation révéré partout, ou une seule tête de pont pour 52451 (sans besoin de réput), si le joueur a déjà unlock les expés sur un autre perso.")end)
 end
 
 --[[
@@ -101,7 +114,8 @@ local hwarcampaigndeux = {"51589", "51590","51591","51592","51593","51594","5159
 SLASH_HWARCAMPAIGNDEUX1 = "/warhorde2";
 function SlashCmdList.HWARCAMPAIGNDEUX(msg, editbox)
 	local _, _, _, _, _, active = GetChannelDisplayInfo(2)
-	print("Campagne Militaire Horde: 2ème Partie, Premier Assaut : CriteriaID 40454 ")
+	print("Campagne Militaire Horde: 2ème Partie, Premier Assaut: ")
+	C_Timer.After(0.5, function() print("Réputation CriteriaID 40454")end)
 	    for k, v in pairs(hwarcampaigndeux) do
         SendChatMessage(".lo q " .. v, "SAY")
     end
@@ -115,8 +129,8 @@ local hwarcampaigntrois = {"51784", "51785","51786","51787","51788","51789"};
 SLASH_HWARCAMPAIGNTROIS1 = "/warhorde3";
 function SlashCmdList.HWARCAMPAIGNTROIS(msg, editbox)
 	local _, _, _, _, _, active = GetChannelDisplayInfo(2)
-	print("Campagne Militaire Horde: 3ème Partie, La tombe du Maréchal : Requiert Amical 4500")
-	print("Réputation - CriteriaID 40510")
+	print("Campagne Militaire Horde: 3ème Partie, La tombe du Maréchal : ")
+	C_Timer.After(0.5, function() print("Requiert Amical 4500 Réputation - CriteriaID 40510")end)
 	    for k, v in pairs(hwarcampaigntrois) do
         SendChatMessage(".lo q " .. v, "SAY")
     end
@@ -133,7 +147,7 @@ SLASH_HWARCAMPAIGNQUATRE1 = "/warhorde4";
 function SlashCmdList.HWARCAMPAIGNQUATRE(msg, editbox)
 	local _, _, _, _, _, active = GetChannelDisplayInfo(2)
 	print("Campagne Militaire Horde: 4ème Partie, Mort d'un Eaugure")
-	print("Requiert Honoré 3000 Réputation  - CriteriaID 40511")
+	C_Timer.After(0.5, function() print("Requiert Honoré 3000 Réputation  - CriteriaID 40511")end)
 	    for k, v in pairs(hwarcampaignquatre) do
         SendChatMessage(".lo q " .. v, "SAY")
     end
@@ -149,7 +163,7 @@ SLASH_HWARCAMPAIGNCINQ1 = "/warhorde5";
 function SlashCmdList.HWARCAMPAIGNCINQ(msg, editbox)
 	local _, _, _, _, _, active = GetChannelDisplayInfo(2)
 	print("Campagne Militaire Horde: 5ème Partie, Au fond de la mer")
-	print("Requiert Honoré 7500 Réputation  - CriteriaID 40867")
+	C_Timer.After(0.5, function() print("Requiert Honoré 7500 Réputation  - CriteriaID 40867")end)
 	    for k, v in pairs(hwarcampaigncinq) do
         SendChatMessage(".lo q " .. v, "SAY")
     end
@@ -165,7 +179,7 @@ SLASH_HWARCAMPAIGNSIX1 = "/warhorde6";
 function SlashCmdList.HWARCAMPAIGNSIX(msg, editbox)
 	local _, _, _, _, _, active = GetChannelDisplayInfo(2)
 	print("Campagne Militaire Horde: 6ème Partie, L'assaut de Boralus :")
-	print("Requiert Révéré - CriteriaID 40868")
+	C_Timer.After(0.5, function() print("Requiert Révéré - CriteriaID 40868")end)
 	    for k, v in pairs(hwarcampaignsix) do
         SendChatMessage(".lo q " .. v, "SAY")
     end
@@ -320,6 +334,41 @@ function SlashCmdList.HWARCAMPAIGNTREIZE(msg, editbox)
 	    for k, v in pairs(hwarcampaigntreize) do
         SendChatMessage(".lo q " .. v, "SAY")
     end
+end
+
+
+--[[
+					ALLIANCE: 
+	1ère Partie, pour débloquer les expéditions :
+--]]
+
+local awarcampaignune = {"52544", "53332","51714","51715","53074","52654","47189","51308","51088","51283","51918","52450"};
+SLASH_AWARCAMPAIGNUNE1 = "/warally1";
+SLASH_AWARCAMPAIGNUNE2 = "/waralliance1";
+function SlashCmdList.AWARCAMPAIGNUNE(msg, editbox)
+	local _, _, _, _, _, active = GetChannelDisplayInfo(2)
+	print("Campagne Militaire Alliance 8.0 : 1ère Partie, pour débloquer les expéditions")
+	    for k, v in pairs(awarcampaignune) do
+        SendChatMessage(".lo q " .. v, "SAY")
+    end
+	C_Timer.After(1, function() print("Il faut bien accomplir les 3 Têtes de pont (foothold) pour débloquer la quête l'union de Kultiras 51918, ou si déjà faite sur un alt, juste commencer une pour faire 52450.") end)
+end
+
+--[[
+					ALLIANCE: 
+	2ème Partie, Du sang sur du Sable : CriteriaID 40573
+--]]
+
+local awarcampaigndeux = {"52026", "52027","52028","52029","52030","52031","52032","52033","52034","52035","52036","52038","52039","52040","52041","52042","52146"};
+SLASH_AWARCAMPAIGNDEUX1 = "/warally2";
+SLASH_AWARCAMPAIGNDEUX2 = "/waralliance2";
+function SlashCmdList.AWARCAMPAIGNDEUX(msg, editbox)
+	local _, _, _, _, _, active = GetChannelDisplayInfo(2)
+	print("Campagne Militaire Alliance 8.0 : 2ème Partie, Du sang sur du Sable")
+	    for k, v in pairs(awarcampaigndeux) do
+        SendChatMessage(".lo q " .. v, "SAY")
+    end
+	C_Timer.After(0.5, function() print("CriteriaID 40573") end)
 end
 
 
