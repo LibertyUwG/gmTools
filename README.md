@@ -29,6 +29,7 @@ Des mises à jours seront bientôt disponible (Dès que j'ai le temps en faite L
 	/nazh3  |  /naza3 - Chapitre 3 Horde / Alliance NAZJATAR
 	/cape - Quêtes Cape légendaire H&A
 	/rcoeur - Renforcement du coeur H&A
+	/dalaran - Quête acquisition pierre de foyer Dalaran
 
 
 - Possible implémentation d'une commande:
