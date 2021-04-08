@@ -418,7 +418,7 @@ end
 
 
 -- Renforcement du coeur H/A
-local renforcementcoeur = {"55851","55533","55374","55400","55407","55425","55497","55618","57010", "56161","55481","57003"};
+local renforcementcoeur = {"55851","55533","55374","55400","55407","55425","55497","55618","57010","56162","56350","57004","55361","55362","55363","56156"};
 SLASH_RENFORT1 = "/rcoeur";
 function SlashCmdList.RENFORT(msg, editbox)
 	local _, _, _, _, _, active = GetChannelDisplayInfo(2)
