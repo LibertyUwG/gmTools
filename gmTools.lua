@@ -372,6 +372,95 @@ function SlashCmdList.AWARCAMPAIGNDEUX(msg, editbox)
 end
 
 
+--[[
+					ALLIANCE: 
+	3ème Partie, A la poursuite des ténèbres : CriteriaID 40574
+--]]
+
+local awarcampaigntrois = {"52147", "52150","52156","52158","52170","52171","52172","52208","52219","53069","52036"};
+SLASH_AWARCAMPAIGNTROIS1 = "/warally3";
+SLASH_AWARCAMPAIGNTROIS2 = "/waralliance3";
+function SlashCmdList.AWARCAMPAIGNTROIS(msg, editbox)
+	local _, _, _, _, _, active = GetChannelDisplayInfo(2)
+	print("Campagne Militaire Alliance 8.0 : 3ème Partie, A la poursuite des ténèbres")
+	    for k, v in pairs(awarcampaigntrois) do
+        SendChatMessage(".lo q " .. v, "SAY")
+    end
+	C_Timer.After(0.5, function() print("CriteriaID 40574") end)
+end
+
+--[[
+					ALLIANCE: 
+	4ème Partie, Une occasion on or : CriteriaID 40583
+--]]
+
+local awarcampaignquatre = {"52154", "52173","52203","52204","52205","52241","52247","52259","52260","52261","53070"};
+SLASH_AWARCAMPAIGNQUATRE1 = "/warally4";
+SLASH_AWARCAMPAIGNQUATRE2 = "/waralliance4";
+function SlashCmdList.AWARCAMPAIGNQUATRE(msg, editbox)
+	local _, _, _, _, _, active = GetChannelDisplayInfo(2)
+	print("Campagne Militaire Alliance 8.0 : 4ème Partie, Une occasion on or")
+	    for k, v in pairs(awarcampaignquatre) do
+        SendChatMessage(".lo q " .. v, "SAY")
+    end
+	C_Timer.After(0.5, function() print("CriteriaID 40583") end)
+end
+
+
+--[[
+					ALLIANCE: 
+	5ème Partie, Du sang dans l'Eau : CriteriaID  40869
+--]]
+
+local awarcampaigncinq = {"52308", "52489","52490","52491","52492","52494","52495","52496","53071"};
+SLASH_AWARCAMPAIGNCINQ1 = "/warally5";
+SLASH_AWARCAMPAIGNCINQ2 = "/waralliance5";
+function SlashCmdList.AWARCAMPAIGNCINQ(msg, editbox)
+	local _, _, _, _, _, active = GetChannelDisplayInfo(2)
+	print("Campagne Militaire Alliance 8.0 : 5ème Partie, Du sang dans l'Eau")
+	    for k, v in pairs(awarcampaigncinq) do
+        SendChatMessage(".lo q " .. v, "SAY")
+    end
+	C_Timer.After(0.5, function() print("CriteriaID  40869") end)
+end
+
+--[[
+					ALLIANCE: 
+	6ème Partie, L'Assaut de Zuldazar : CriteriaID 40870
+--]]
+
+local awarcampaignsix = {"52473", "52282","52281","52283","52284","52285","52290","52286","52287","52288","52289","52291","52788","52789","52790","53098","53072"};
+SLASH_AWARCAMPAIGNSIX1 = "/warally6";
+SLASH_AWARCAMPAIGNSIX2 = "/waralliance6";
+function SlashCmdList.AWARCAMPAIGNSIX(msg, editbox)
+	local _, _, _, _, _, active = GetChannelDisplayInfo(2)
+	print("Campagne Militaire Alliance 8.0 : 6ème Partie, L'Assaut de Zuldazar")
+	    for k, v in pairs(awarcampaignsix) do
+        SendChatMessage(".lo q " .. v, "SAY")
+    end
+	C_Timer.After(0.5, function() print("CriteriaID 40870") end)
+end
+
+
+--[[
+					ALLIANCE: 
+	Campagne Militaire du Patch 8.1
+--]]
+
+local awarcampaignsept = {"53986", "53888","53896","53909","53910","54518","54519","53916","53978","54559","54787","53919","53936","54703","53887"};
+SLASH_AWARCAMPAIGNSEPT1 = "/warally7";
+SLASH_AWARCAMPAIGNSEPT2 = "/waralliance7";
+function SlashCmdList.AWARCAMPAIGNSEPT(msg, editbox)
+	local _, _, _, _, _, active = GetChannelDisplayInfo(2)
+	print("Campagne Militaire Alliance 8.1 : 1er Chapitre, Craignez la fille du vent Salé :")
+	    for k, v in pairs(awarcampaignsept) do
+        SendChatMessage(".lo q " .. v, "SAY")
+    end
+end
+
+
+
+
 
 -- NAZJATAR GLOBAL
 
